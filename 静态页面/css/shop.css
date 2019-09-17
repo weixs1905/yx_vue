@@ -1,0 +1,48 @@
+#shop {
+  width: 100%;
+  height: 100%;
+  background: #dcdcdc;
+}
+#shop .header {
+  width: 100%;
+  height: 40px;
+  padding-top: 20px;
+  background: #fff;
+}
+#shop .header span:first-child {
+  font-size: 20px;
+  margin-left: 20px;
+}
+#shop .header span:last-child {
+  float: right;
+  margin-right: 30px;
+  background: #f73809;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px;
+}
+#shop .contentWarp {
+  width: 100%;
+}
+#shop .contentWarp .title {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  background: #d3d3d3;
+  line-height: 35px;
+}
+#shop .contentWarp .title span {
+  width: 33.33333%;
+}
+#shop .contentWarp .content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#shop .contentWarp .content .iconfont {
+  font-size: 80px;
+  margin: 100px 0 20px 0;
+  color: #eee;
+}

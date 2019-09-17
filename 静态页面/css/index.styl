@@ -1,0 +1,459 @@
+// $rem = 75px
+html,body
+  //第一屏home页
+  width 100%
+  height 100%
+  #home
+    width 100%
+    height 100%    
+    position relative
+    .homeHeader
+      position fixed
+      top 0px
+      z-index 10
+      width 100%
+      .homeHeader-top
+        width 100%
+        height 45px
+        background #fff
+        // position fixed
+
+        // background skyblue
+        display flex
+        align-items: center
+        padding 5px 20px
+        .headerTitle
+          color #000
+          margin-right 10px
+          font-size 18px
+        .toSearch
+          width 250px
+          height 30px         
+          text-align center
+          line-height 30px
+          background #eee
+          border-radius 5px
+          .icon-sousuo
+            font-size 20px
+            vertical-align middle
+          .searchProduct
+            font-size 14px
+      .homeHeader-bottom
+        position relative
+        width 100%
+        height 40px
+        display flex
+        background #fff
+        .headerTab
+          display flex
+          align-items center
+          height 40px
+          width 80%
+          white-space nowrap
+          overflow hidden
+          .tabItem
+            height 40px
+            box-sizing border-box
+            margin 0 15px
+            font-size 15px
+            line-height 40px
+            &.active
+              color red
+              border-bottom 2px solid red
+        .icon         
+          // float right
+          // position relative
+          color #333
+          .iconfont
+            // background skyblue 
+            position absolute
+            right 20px
+            top 13px
+            z-index 7
+            &showlist 
+              display none
+            
+          // 全部频道页面
+        .alltablist  
+          width 100%
+          // height 200px
+          position absolute
+          z-index 6
+          background #fff
+          // height 150px
+          // background skyblue 
+          padding 15px
+          .alltablist-title
+            font-size 15px            
+          .alltab
+            display flex
+            flex-wrap wrap
+            margin-top 15px          
+            .tabItem
+              border 1px solid #333
+              border-radius 5px
+              width 70px
+              height 25px
+              text-align center
+              line-height 25px
+              margin 0 0 20px 10px
+              font-size 12px
+              &.active
+                color red
+                border 1px solid red
+    .mask
+      position absolute
+      width 100%
+      height 100%
+      background rgba(0,0,0,.5)
+      z-index 5
+      
+      // position absolute
+      // bottom 0
+
+
+    .content
+      margin-top 95px
+      // position absolute
+      padding-bottom 50px
+      top 0
+      .scrollImg
+        width 100%
+        height 200px
+        .imglist
+          position relative
+          .imgItem
+            position absolute
+            top 0
+            left 0
+            img 
+              width 100%
+              height 200px
+      .middleTitle
+        width 100%
+        height 40px
+        // background skyblue 
+        font-size 12px
+        
+        span 
+          display inline-block
+          padding-left 25px
+          margin 0 10px
+          height 40px
+          line-height 40px
+          background-position 0 10px
+          background-size 20px 20px
+          background-repeat no-repeat
+        .bgImg1
+          background-image: url(https://yanxuan.nosdn.127.net/a03dd909803b9ac032eba58b7253a2f6.png);
+        .bgImg2
+          background-image: url(https://yanxuan.nosdn.127.net/2d0402ffcd52b3ec3b07422681c42a89.png);
+        .bgImg3
+          background-image: url(https://yanxuan.nosdn.127.net/eb61ee48e8942dbd1784c9ee75ebe955.png);
+      .categorylist
+        border-bottom 10px solid #eee
+        width 100%
+        .listwarper
+          display flex
+          flex-wrap wrap
+          align-items center
+          // padding 10px
+          width 100%
+          box-sizing border-box
+          .listitem
+            display flex
+            flex-direction column
+            width 20%
+            margin-bottom 10px
+            img 
+              width 55px
+              height 55px
+              margin-bottom 10px
+            span 
+              font-size 14px
+      .options-index1
+        padding 10px    
+        border-bottom 10px solid #eee   
+        .header
+          width 100%
+          height 40px
+          // background skyblue 
+          font-size 20px
+          text-align center
+          line-height 40px
+        .imgitem
+          width 100%
+          height 250px
+          box-sizing border-box
+          
+          display flex
+          .item1
+            width 50%
+            height 250px
+            background #eee
+            float left
+            position relative
+            margin-right 5px
+            
+
+            img 
+              width 130px
+              height 130px
+              position absolute
+              left 50%
+              top 50%
+              margin-left -65px
+              margin-top -65px
+              
+            span
+              display inline-block
+              margin 20px 0 0 10px
+          .item2
+            background #E1FFFF
+            width 50%
+            height 250px
+            display flex
+            flex-direction column
+            box-sizing border-box
+            img 
+              width 100px
+              height 100px
+            .item-top
+              background	#FFEFD5
+              height 120px
+              img 
+                float left
+              .word
+                float right
+                display flex
+                flex-direction column
+                margin 10px 10px 0 0 
+              
+             
+            .item-bottom
+              background	#7FFFA
+              margin-top  5px
+              height 120px
+              .word
+                float left
+                margin-top 20px
+                display flex
+                flex-direction column
+
+              img 
+                float right
+
+      .options-index2
+        width 100%
+        padding 10px
+        box-sizing border-box
+        border-bottom 10px solid #eee
+        .header
+          width 100%
+          height 40px
+          font-size 16px
+          position relative
+          line-height 40px
+          .more
+            position absolute
+            right 30px
+            font-size 14px
+        .imgitem
+          display flex
+          flex-wrap wrap
+          .item 
+            width 175px
+            height 140px
+            background-size 100% 100%
+            .word
+              display flex
+              flex-direction column
+              align-items center
+              margin-top 10px
+              font-size 14px    
+          .item1
+            margin 0 5px 5px 0
+            background-image url(https://yanxuan.nosdn.127.net/74e2ea8f81004d0a60f90fc8e4649058.png?imageView&thumbnail=343y260&enlarge=1)
+          .item2
+            background-image url(https://yanxuan.nosdn.127.net/c097be14110f769d58245cdad73e15c3.png?imageView&thumbnail=343y260&enlarge=1)
+          .item3
+            background-image url(https://yanxuan.nosdn.127.net/66a23d776f41cba70d00803a5231124b.png?imageView&thumbnail=343y260&enlarge=1)
+          .item4
+            margin 5px 0 0 5px
+            background-image url(https://yanxuan.nosdn.127.net/c9e14b08576b6a5e2bc3ef46e0e05d08.png?imageView&thumbnail=343y260&enlarge=1)
+
+
+
+      .options-index3
+        width 100%
+        padding 10px
+        box-sizing border-box
+        border-bottom 10px solid #eeeeee
+        .header
+          width 100%
+          height 40px
+          line-height 40px
+        .imgitem
+          width 100%
+          .item-top
+            width 100%
+            display flex
+            .item
+              width 50%
+              height 100px
+              background-size 70%
+              background-repeat no-repeat
+              background-position 50px 0
+              .word
+                margin 20px 0 0 6px
+            .item1
+              background-color 	#AFEEEE
+              margin-right 5px
+              background-image url(https://yanxuan-item.nosdn.127.net/4f43f69ece3312fcd0b032c949c7c71b.png?imageView&quality=65&thumbnail=200x200)
+            .item2
+              background-image url(https://yanxuan.nosdn.127.net/6fd807743e8e25472aca8b6b0b8f3039.png?imageView&quality=65&thumbnail=200x200)
+              background-color #F0E68C	
+          .item-bottom
+            display flex
+            width 100%
+            flex-wrap wrap
+            box-sizing border-box           
+            .item 
+              width 24%
+              height 90px
+              background #eeeeee
+              margin 5px 4px 0 0 
+              text-align center
+              font-size 14px
+              padding-top 10px
+              background-size 100%
+              background-position 0 25px
+              background-repeat no-repeat
+            .item3
+              background-image url(https://yanxuan-item.nosdn.127.net/15aaef3c3dd497fccb91358885a5ba0f.png?imageView&quality=65&thumbnail=200x200)
+            .item4
+              background-image url(https://yanxuan-item.nosdn.127.net/e37656ecad9a2494f456e222fe7800a2.png?imageView&quality=65&thumbnail=200x200)
+            .item5
+              background-image url(https://yanxuan-item.nosdn.127.net/63967eb40b0af505f1fd066442952bab.png?imageView&quality=65&thumbnail=200x200)
+            .item6
+              margin-right 0px
+              background-image url(https://yanxuan-item.nosdn.127.net/e5474a8f4fd5748079e2ba2ead806b51.png?imageView&quality=65&thumbnail=200x200)
+            .item7
+              background-image url(https://yanxuan-item.nosdn.127.net/d9376c059ce15a774199e2cedc5a8d63.png?imageView&quality=65&thumbnail=200x200)
+            .item8
+              background-image url(https://yanxuan-item.nosdn.127.net/06388e29fad0b7e8a9d6b1f398e5dcd3.png?imageView&quality=65&thumbnail=200x200)
+            .item9
+              background-image url(https://yanxuan-item.nosdn.127.net/74662d24f6d217b520178c5a6d031457.png?imageView&quality=65&thumbnail=200x200)
+            .item10
+              background-image url(https://yanxuan.nosdn.127.net/4f2eb96a4636205ad21a115f0bf43761.png?imageView&quality=65&thumbnail=200x200)
+              margin-right 0px
+
+      .options-index4
+        width 100%
+        border-bottom 10px solid #eeeeee
+        overflow hidden
+        .bjImg
+          width 100%
+          height 160px
+          background-image url(https://yanxuan.nosdn.127.net/874cc79fd5f7e13eac10e1dcc9fe6c92.jpg?imageView&thumbnail=750x0&quality=75)
+          background-size 100%
+          margin-bottom 10px
+        .tablist
+          width 100%
+          padding 10px
+          box-sizing border-box
+          .listitem
+            display flex
+            width 100%
+            .item
+              display flex
+              flex-direction column
+              width 100px 
+              height 180px
+              margin-right 10px
+              font-size 14px
+              img 
+                width 100px
+                height 100px
+                background #eeeeee
+              span
+                margin-bottom 5px
+      .footer
+        width 100%
+        height 120px
+        color #ffffff
+        background 	#4D4D4D
+        text-align center
+        span 
+          display inline-block
+          width 80px
+          height 30px
+          border 1px solid 	#F5F5F5
+          text-align center
+          line-height 30px
+          margin-top 20px
+          font-size 14px
+        p
+          font-size 12px
+          margin-top 20px
+          
+
+        
+
+
+
+
+.hhh
+
+
+     // 底部导航
+
+     
+    .tabFooter
+      width 100%
+      height 50px
+      position fixed
+      bottom 0
+      background #fff
+      .tabBar
+        display flex
+        align-items center
+        justify-content center
+        padding-top 10px
+        
+        li
+          display flex
+          flex-direction column 
+          justify-items center
+          width 20%
+          text-align center
+          span
+            font-size 12px
+            display inline-block
+            margin-top 6px
+          
+
+
+
+
+          
+
+          
+          
+          
+          
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+

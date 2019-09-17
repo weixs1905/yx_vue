@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <!-- <link rel="icon" href="<%= BASE_URL %>favicon.ico"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/personal.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1356527_zt2p8vjsm6.css">
+    <title>vue-yx-project</title>
+    <style>
+      html,body{
+        width:100%;
+        height:100%;
+      }
+      /* 模拟屏幕区域 */
+      #app{
+        width:100%;
+        height: 100%;
+        /* overflow: hidden; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="personal">
+        <div class="header">
+          <img class="avatar" src="//yanxuan.nosdn.127.net/8945ae63d940cc42406c3f67019c5cb6.png" alt="">
+          <span>xxx</span>
+        </div>
+        <div class="msg">
+            <p>我的资产</p>
+            <ul class="counter">
+              <li class="item">回馈金</li>
+              <li class="item">红包</li>
+              <li class="item">优惠劵</li>
+              <li class="item">津贴</li>
+              <li class="item">礼品卡</li>
+            </ul>
+          </div>
+          <div class="list">
+            <ul class="listcontent">
+              <li class="item"><i class="iconfont icon-dingdan2"></i><span>我的订单</span></li>
+              <li class="item"><i class="iconfont icon-rili"></i><span>一起拼</span></li>
+              <li class="item"><i class="iconfont icon-shouhou"></i><span>售后</span></li>
+              <li class="item"><i class="iconfont icon-lipinka"></i><span>返利</span></li>
+              <li class="item"><i class="iconfont icon-tubiaolunkuo-"></i><span>会员中心</span></li>
+            </ul>
+          </div>
+          <div class="loginout">
+            退出登录
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
